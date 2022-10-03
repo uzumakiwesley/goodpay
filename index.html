@@ -11,12 +11,13 @@
       integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
       crossorigin="anonymous"
     />
+    <link rel="shortcut icon" href="./img/logo/GoodPay.png" type="image/x-icon">
   </head>
   <body>
     <header>
       <nav class="navbar bg-light">
         <div class="container-fluid">
-          <img src="./img/logo/GoodPayBanner.png" height="70" widht="100" />
+          <img src="./img/logo/GoodPayBanner.png" height="70" width="100" />
           <a class="navbar-brand" href="#">[money for good]</a>
           <button
             class="navbar-toggler"
@@ -34,8 +35,8 @@
             aria-labelledby="offcanvasNavbarLabel"
           >
             <div class="offcanvas-header">
-              <img src="./img/logo/GoodPay.png" width="50" heigth="50" />
-              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Goodpay</h5>
+              <img src="./img/logo/GoodPay.png" width="50" height="50" />
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
               <button
                 type="button"
                 class="btn-close"
@@ -43,7 +44,6 @@
                 aria-label="Close"
               ></button>
             </div>
-
             <div class="offcanvas-body">
               <form class="d-flex" role="search">
                 <input
@@ -56,8 +56,7 @@
                   Buscar
                 </button>
               </form>
-
-              <div class="accordion mt-2" id="accordionExample">
+              <div class="accordion mt-3" id="accordionExample">
                 <div class="accordion-item">
                   <h2 class="accordion-header" id="headingOne">
                     <button
@@ -83,6 +82,7 @@
                           >Login</span
                         >
                         <input
+                          id="login"
                           type="text"
                           class="form-control"
                           aria-label="Sizing example input"
@@ -94,6 +94,7 @@
                           >Senha</span
                         >
                         <input
+                          id="senha"
                           type="password"
                           class="form-control"
                           aria-label="Sizing example input"
@@ -101,7 +102,7 @@
                         />
                       </div>
                       <div class="d-grid gap-2">
-                        <button class="btn btn-outline-success" type="button">
+                        <button id="btnEntrar" class="btn btn-outline-success" type="button">
                           Entrar
                         </button>
                         <button class="btn btn-outline-dark" type="button">
@@ -144,8 +145,8 @@
                       </p>
                       <p>
                         A aplicação usa elementos de personalização em Bootstrap
-                        5, com Javascript local, os dados utilizados e
-                        adicionados nesta interface não são enviados a um
+                        5, com Javascript local, os dados utilizados para e
+                        adicionados neste interface não são enviados a um
                         serviço.
                       </p>
                     </div>
@@ -172,21 +173,21 @@
                   >
                     <div class="accordion-body">
                       <p>
-                        Tech for Good: 5 pilares que vão transformar o mundo:
+                        Tech For Good: 5 pilares que vão transformar o mundo:
                         Educação, Diversidade, Saúde, Longevidade e
-                        Sustentabilidade.
+                        Sustentabilidade
                       </p>
                       <p>
-                        Nossa missão é a formação de emprego, aplicando os 5
-                        pilares do "Tech for Good". Ser uma escola inclusiva,
+                        Nossa missão é a formação e o emprego, aplicando os 5
+                        pilares do "Tech For Good". Ser uma escola inclusiva,
                         que, através de nossa metodologia ágil, possa capacitar
                         e educar em tecnologia, gerar oportunidades de emprego
                         para todas as gerações, no início ou na ressignificação
                         de carreira, com foco em diversidade e equidade. Numa
                         profissão que fomente o bem-estar físico e mental,
-                        permitindo o equilibrio entre a vida profissional e
-                        pessoal, através de trabalho remoto, com flexibilidade
-                        de horários, além de ser um negócio sustentavel e
+                        permitindo o equilíbrio entre a vida profissional e
+                        pessoal, através do trabalho remoto, com flexibilidade
+                        de horários, além de ser um negócio sustentável e
                         responsável, socialmente.
                       </p>
                     </div>
@@ -358,7 +359,7 @@
 
     <div
       class="modal fade"
-      id="exampleModal"
+      id="alertaLogin"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
       aria-hidden="true"
@@ -366,7 +367,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Erro de login</h5>
             <button
               type="button"
               class="btn-close"
@@ -374,16 +375,9 @@
               aria-label="Close"
             ></button>
           </div>
-          <div class="modal-body">...</div>
+          <div class="modal-body">Um erro aconteceu</div>
           <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save changes</button>
+            <button type="button" class="btn btn-primary">Fechar</button>
           </div>
         </div>
       </div>
